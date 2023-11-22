@@ -1,0 +1,39 @@
+/* ゲームコンテナ */
+.game-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ゲームボード */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px); /* ゲームボードの列 */
+  grid-template-rows: repeat(20, 30px); /* ゲームボードの行 */
+  border: 2px solid #333;
+  background-color: #f0f0f0;
+}
+
+/* ブロック（セル）のスタイル */
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* サイドパネル */
+.side-panel {
+  width: 200px;
+  padding: 10px;
+  background-color: #e0e0e0;
+}
+
+/* スコア */
+.score {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
